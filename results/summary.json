@@ -1,0 +1,500 @@
+{
+  "models": {
+    "gemini-3.6-flash": {
+      "returned_model": [
+        "gemini-3.6-flash"
+      ],
+      "responses": 24,
+      "tasks_covered": 16,
+      "tpr": 1.0,
+      "tnr": 1.0,
+      "balanced_accuracy": 1.0,
+      "false_passes": 0,
+      "flawed_runs": 12,
+      "false_fails": 0,
+      "correct_runs": 12,
+      "no_verdict": 0
+    },
+    "gemini-3-flash": {
+      "returned_model": [
+        "gemini-3-flash-preview"
+      ],
+      "responses": 24,
+      "tasks_covered": 16,
+      "tpr": 0.9583333333333334,
+      "tnr": 1.0,
+      "balanced_accuracy": 0.9791666666666667,
+      "false_passes": 1,
+      "flawed_runs": 12,
+      "false_fails": 0,
+      "correct_runs": 12,
+      "no_verdict": 0
+    },
+    "gemini-3.5-flash-lite": {
+      "returned_model": [
+        "gemini-3.5-flash-lite"
+      ],
+      "responses": 32,
+      "tasks_covered": 16,
+      "tpr": 0.9,
+      "tnr": 0.975,
+      "balanced_accuracy": 0.9375,
+      "false_passes": 4,
+      "flawed_runs": 16,
+      "false_fails": 1,
+      "correct_runs": 16,
+      "no_verdict": 0
+    },
+    "gemini-3.1-flash-lite": {
+      "returned_model": [
+        "gemini-3.1-flash-lite"
+      ],
+      "responses": 32,
+      "tasks_covered": 16,
+      "tpr": 1.0,
+      "tnr": 0.75,
+      "balanced_accuracy": 0.875,
+      "false_passes": 0,
+      "flawed_runs": 16,
+      "false_fails": 10,
+      "correct_runs": 16,
+      "no_verdict": 0
+    },
+    "gemma-4-31b": {
+      "returned_model": [
+        "gemma-4-31b-it"
+      ],
+      "responses": 32,
+      "tasks_covered": 16,
+      "tpr": 0.875,
+      "tnr": 1.0,
+      "balanced_accuracy": 0.9375,
+      "false_passes": 5,
+      "flawed_runs": 16,
+      "false_fails": 0,
+      "correct_runs": 16,
+      "no_verdict": 0
+    },
+    "gemini-3.1-flash-lite-t1": {
+      "returned_model": [
+        "gemini-3.1-flash-lite"
+      ],
+      "responses": 20,
+      "tasks_covered": 4,
+      "tpr": 0.8,
+      "tnr": 0.4,
+      "balanced_accuracy": 0.6000000000000001,
+      "false_passes": 2,
+      "flawed_runs": 10,
+      "false_fails": 6,
+      "correct_runs": 10,
+      "no_verdict": 0
+    },
+    "gemma-4-31b-t1": {
+      "returned_model": [
+        "gemma-4-31b-it"
+      ],
+      "responses": 20,
+      "tasks_covered": 4,
+      "tpr": 1.0,
+      "tnr": 1.0,
+      "balanced_accuracy": 1.0,
+      "false_passes": 0,
+      "flawed_runs": 10,
+      "false_fails": 0,
+      "correct_runs": 10,
+      "no_verdict": 0
+    }
+  },
+  "excluded": {
+    "gemini-3.5-flash": [
+      "gemini-3.6-flash"
+    ]
+  },
+  "per_task": {
+    "S1_correct": {
+      "gemini-3.6-flash": [
+        3,
+        3
+      ],
+      "gemini-3-flash": [
+        3,
+        3
+      ],
+      "gemini-3.5-flash-lite": [
+        4,
+        5
+      ],
+      "gemini-3.1-flash-lite": [
+        0,
+        5
+      ],
+      "gemma-4-31b": [
+        5,
+        5
+      ],
+      "gemini-3.1-flash-lite-t1": [
+        2,
+        5
+      ],
+      "gemma-4-31b-t1": [
+        5,
+        5
+      ]
+    },
+    "S1_error": {
+      "gemini-3.6-flash": [
+        3,
+        3
+      ],
+      "gemini-3-flash": [
+        3,
+        3
+      ],
+      "gemini-3.5-flash-lite": [
+        5,
+        5
+      ],
+      "gemini-3.1-flash-lite": [
+        5,
+        5
+      ],
+      "gemma-4-31b": [
+        5,
+        5
+      ],
+      "gemini-3.1-flash-lite-t1": [
+        5,
+        5
+      ],
+      "gemma-4-31b-t1": [
+        5,
+        5
+      ]
+    },
+    "S2_correct": {
+      "gemini-3.6-flash": [
+        1,
+        1
+      ],
+      "gemini-3-flash": [
+        1,
+        1
+      ],
+      "gemini-3.5-flash-lite": [
+        1,
+        1
+      ],
+      "gemini-3.1-flash-lite": [
+        1,
+        1
+      ],
+      "gemma-4-31b": [
+        1,
+        1
+      ]
+    },
+    "S2_error": {
+      "gemini-3.6-flash": [
+        1,
+        1
+      ],
+      "gemini-3-flash": [
+        1,
+        1
+      ],
+      "gemini-3.5-flash-lite": [
+        1,
+        1
+      ],
+      "gemini-3.1-flash-lite": [
+        1,
+        1
+      ],
+      "gemma-4-31b": [
+        1,
+        1
+      ]
+    },
+    "S3_correct": {
+      "gemini-3.6-flash": [
+        1,
+        1
+      ],
+      "gemini-3-flash": [
+        1,
+        1
+      ],
+      "gemini-3.5-flash-lite": [
+        1,
+        1
+      ],
+      "gemini-3.1-flash-lite": [
+        1,
+        1
+      ],
+      "gemma-4-31b": [
+        1,
+        1
+      ]
+    },
+    "S3_error": {
+      "gemini-3.6-flash": [
+        1,
+        1
+      ],
+      "gemini-3-flash": [
+        1,
+        1
+      ],
+      "gemini-3.5-flash-lite": [
+        1,
+        1
+      ],
+      "gemini-3.1-flash-lite": [
+        1,
+        1
+      ],
+      "gemma-4-31b": [
+        1,
+        1
+      ]
+    },
+    "S4_correct": {
+      "gemini-3.6-flash": [
+        1,
+        1
+      ],
+      "gemini-3-flash": [
+        1,
+        1
+      ],
+      "gemini-3.5-flash-lite": [
+        1,
+        1
+      ],
+      "gemini-3.1-flash-lite": [
+        1,
+        1
+      ],
+      "gemma-4-31b": [
+        1,
+        1
+      ]
+    },
+    "S4_error": {
+      "gemini-3.6-flash": [
+        1,
+        1
+      ],
+      "gemini-3-flash": [
+        1,
+        1
+      ],
+      "gemini-3.5-flash-lite": [
+        1,
+        1
+      ],
+      "gemini-3.1-flash-lite": [
+        1,
+        1
+      ],
+      "gemma-4-31b": [
+        1,
+        1
+      ]
+    },
+    "S5_correct": {
+      "gemini-3.6-flash": [
+        1,
+        1
+      ],
+      "gemini-3-flash": [
+        1,
+        1
+      ],
+      "gemini-3.5-flash-lite": [
+        1,
+        1
+      ],
+      "gemini-3.1-flash-lite": [
+        1,
+        1
+      ],
+      "gemma-4-31b": [
+        1,
+        1
+      ]
+    },
+    "S5_error": {
+      "gemini-3.6-flash": [
+        1,
+        1
+      ],
+      "gemini-3-flash": [
+        1,
+        1
+      ],
+      "gemini-3.5-flash-lite": [
+        1,
+        1
+      ],
+      "gemini-3.1-flash-lite": [
+        1,
+        1
+      ],
+      "gemma-4-31b": [
+        1,
+        1
+      ]
+    },
+    "S6_correct": {
+      "gemini-3.6-flash": [
+        1,
+        1
+      ],
+      "gemini-3-flash": [
+        1,
+        1
+      ],
+      "gemini-3.5-flash-lite": [
+        1,
+        1
+      ],
+      "gemini-3.1-flash-lite": [
+        1,
+        1
+      ],
+      "gemma-4-31b": [
+        1,
+        1
+      ]
+    },
+    "S6_error": {
+      "gemini-3.6-flash": [
+        1,
+        1
+      ],
+      "gemini-3-flash": [
+        1,
+        1
+      ],
+      "gemini-3.5-flash-lite": [
+        1,
+        1
+      ],
+      "gemini-3.1-flash-lite": [
+        1,
+        1
+      ],
+      "gemma-4-31b": [
+        1,
+        1
+      ]
+    },
+    "S7_correct": {
+      "gemini-3.6-flash": [
+        1,
+        1
+      ],
+      "gemini-3-flash": [
+        1,
+        1
+      ],
+      "gemini-3.5-flash-lite": [
+        1,
+        1
+      ],
+      "gemini-3.1-flash-lite": [
+        1,
+        1
+      ],
+      "gemma-4-31b": [
+        1,
+        1
+      ]
+    },
+    "S7_error": {
+      "gemini-3.6-flash": [
+        1,
+        1
+      ],
+      "gemini-3-flash": [
+        1,
+        1
+      ],
+      "gemini-3.5-flash-lite": [
+        1,
+        1
+      ],
+      "gemini-3.1-flash-lite": [
+        1,
+        1
+      ],
+      "gemma-4-31b": [
+        1,
+        1
+      ]
+    },
+    "S8_correct": {
+      "gemini-3.6-flash": [
+        3,
+        3
+      ],
+      "gemini-3-flash": [
+        3,
+        3
+      ],
+      "gemini-3.5-flash-lite": [
+        5,
+        5
+      ],
+      "gemini-3.1-flash-lite": [
+        0,
+        5
+      ],
+      "gemma-4-31b": [
+        5,
+        5
+      ],
+      "gemini-3.1-flash-lite-t1": [
+        2,
+        5
+      ],
+      "gemma-4-31b-t1": [
+        5,
+        5
+      ]
+    },
+    "S8_error": {
+      "gemini-3.6-flash": [
+        3,
+        3
+      ],
+      "gemini-3-flash": [
+        2,
+        3
+      ],
+      "gemini-3.5-flash-lite": [
+        1,
+        5
+      ],
+      "gemini-3.1-flash-lite": [
+        5,
+        5
+      ],
+      "gemma-4-31b": [
+        0,
+        5
+      ],
+      "gemini-3.1-flash-lite-t1": [
+        3,
+        5
+      ],
+      "gemma-4-31b-t1": [
+        5,
+        5
+      ]
+    }
+  }
+}

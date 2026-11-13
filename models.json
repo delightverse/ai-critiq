@@ -1,0 +1,20 @@
+{
+  "temperature": 0,
+  "max_tokens": 32768,
+  "models": [
+    {"label": "gemini-3.6-flash", "provider": "gemini",
+     "model_id": "gemini-3.6-flash", "min_interval_s": 7},
+    {"label": "gemini-3-flash", "provider": "gemini",
+     "model_id": "gemini-3-flash-preview", "min_interval_s": 7},
+    {"label": "gemini-3.5-flash-lite", "provider": "gemini",
+     "model_id": "gemini-3.5-flash-lite", "min_interval_s": 7},
+    {"label": "gemini-3.1-flash-lite", "provider": "gemini",
+     "model_id": "gemini-3.1-flash-lite", "min_interval_s": 7},
+    {"label": "gemma-4-31b", "provider": "gemini",
+     "model_id": "gemma-4-31b-it", "min_interval_s": 4},
+    {"label": "gemini-3.1-flash-lite-t1", "provider": "gemini",
+     "model_id": "gemini-3.1-flash-lite", "min_interval_s": 7, "temperature": 1.0},
+    {"label": "gemma-4-31b-t1", "provider": "gemini",
+     "model_id": "gemma-4-31b-it", "min_interval_s": 4, "temperature": 1.0}
+  ]
+}

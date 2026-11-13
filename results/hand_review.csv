@@ -1,0 +1,491 @@
+model,task_id,run,expected,verdict,outcome,injected_error,response,verdict_extracted_ok_y_n,reason_correct_y_n,open_code_note,failure_category
+gemini-3.1-flash-lite,S1_correct,1,CORRECT,INCORRECT,false_fail,,"The explanation is **incorrect**.
+
+Here is the reasoning:
+
+1.  **Business Day Convention:** The explanation correctly identifies that August 31, 2024, is a Saturday. Under the **Modified Following** convention, if the next business day falls into the next month, the date is adjusted to the *preceding* business day. August 30, 2024, is a Friday and is a valid business day in New York. Therefore, the adjusted payment date is indeed August 30, 2024.
+2.  **Accrual Period Calculation:** The explanation states the accrual period is from February 29, 2024, to August 30, 2024.
+    *   February 29 to March 31: 31 days
+    *   April: 30 days
+    *   May: 31 days
+    *   June: 30 days
+    *   July: 31 days
+    *   August 1 to August 30: 30 days
+    *   Total: 31 + 30 + 31 + 30 + 31 + 30 = **183 days**.
+    *   *Correction:* The calculation of days is correct, but the explanation fails to account for the partial month of February. Since the period starts on February 29, the days in February are 0 (if excluding the start date) or 1 (if including the start date). Standard financial practice for ""ACT/360"" usually counts the number of days between dates. From Feb 29 to Aug 30 is 184 days (Feb 29 is day 60 of 2024, Aug 30 is day 244 of 2024; 244 - 60 = 184). The explanation missed the leap day (Feb 29) in its count.
+3.  **Interest Calculation:** Using the correct day count of 184:
+    *   $1,000,000 \times 0.05 \times (184 / 360) = 25,555.56$.
+    *   The explanation used 183 days, leading to an incorrect interest amount of $25,416.67.
+
+Because the day count calculation is flawed (missing the leap day) and the resulting interest amount is incorrect, the explanation is not fully correct.
+
+VERDICT: INCORRECT",y,n/a (failure),"Day-of-year error (Aug 30 = day 244; it is 243) gives 184 days; invents ""missed the leap day""",A. Arithmetic slip turned into a false correction
+gemini-3.1-flash-lite,S1_correct,2,CORRECT,INCORRECT,false_fail,,"The explanation is **incorrect**.
+
+Here is the reasoning:
+
+1.  **Business Day Convention:** The explanation correctly identifies that August 31, 2024, is a Saturday. Under the **Modified Following** convention, if the next business day falls into the next month, the date is adjusted to the *preceding* business day. August 30, 2024, is a Friday and is a valid business day in New York. Therefore, the adjusted payment date is indeed August 30, 2024.
+2.  **Accrual Period Calculation:** The explanation states the accrual period is from February 29, 2024, to August 30, 2024.
+    *   February 29 to March 31: 31 days
+    *   April: 30 days
+    *   May: 31 days
+    *   June: 30 days
+    *   July: 31 days
+    *   August 1 to August 30: 30 days
+    *   Total: 31 + 30 + 31 + 30 + 31 + 30 = **183 days**.
+    *   *Correction:* The calculation of days is correct, but the explanation fails to account for the partial month of February. Since the period starts on February 29, the days in February are 0 (if excluding the start date) or 1 (if including the start date). Standard financial practice for ""ACT/360"" usually counts the number of days between dates. From Feb 29 to Aug 30 is 184 days (Feb 29 is day 60 of 2024, Aug 30 is day 244 of 2024; 244 - 60 = 184). The explanation missed the leap day (Feb 29) in its count.
+3.  **Interest Calculation:** Using the correct day count of 184:
+    *   $1,000,000 \times 0.05 \times (184 / 360) = 25,555.56$.
+    *   The explanation used 183 days, leading to an incorrect interest amount of $25,416.67.
+
+Because the day count calculation is flawed (missing the leap day) and the resulting interest amount is incorrect, the explanation is not fully correct.
+
+VERDICT: INCORRECT",y,n/a (failure),"Day-of-year error (Aug 30 = day 244; it is 243) gives 184 days; invents ""missed the leap day""",A. Arithmetic slip turned into a false correction
+gemini-3.1-flash-lite,S1_correct,3,CORRECT,INCORRECT,false_fail,,"The explanation is **incorrect**.
+
+Here is the reasoning:
+
+1.  **Business Day Convention:** The explanation correctly identifies that August 31, 2024, is a Saturday. Under the **Modified Following** convention, if the next business day falls into the next month, the date is adjusted to the *preceding* business day. August 30, 2024, is a Friday and is a valid business day in New York. Therefore, the adjusted payment date is indeed August 30, 2024.
+2.  **Accrual Period Calculation:** The explanation states the accrual period is from February 29, 2024, to August 30, 2024.
+    *   February 29 to March 31: 31 days
+    *   April: 30 days
+    *   May: 31 days
+    *   June: 30 days
+    *   July: 31 days
+    *   August 1 to August 30: 30 days
+    *   Total: 31 + 30 + 31 + 30 + 31 + 30 = **183 days**.
+    *   *Correction:* The calculation of days is correct, but the explanation fails to account for the partial month of February. Since the period starts on February 29, the days in February are 0 (if excluding the start date) or 1 (if including the start date). Standard financial practice for ""ACT/360"" usually counts the number of days between dates. From Feb 29 to Aug 30 is 184 days (Feb 29 is day 60 of 2024, Aug 30 is day 244 of 2024; 244 - 60 = 184). The explanation missed the leap day (Feb 29) in its count.
+3.  **Interest Calculation:** Using the correct day count of 184:
+    *   $1,000,000 \times 0.05 \times (184 / 360) = 25,555.56$.
+    *   The explanation used 183 days, leading to an incorrect interest amount of $25,416.67.
+
+Because the day count calculation is flawed (missing the leap day) and the resulting interest amount is incorrect, the explanation is not fully correct.
+
+VERDICT: INCORRECT",y,n/a (failure),"Day-of-year error (Aug 30 = day 244; it is 243) gives 184 days; invents ""missed the leap day""",A. Arithmetic slip turned into a false correction
+gemini-3.1-flash-lite,S1_correct,4,CORRECT,INCORRECT,false_fail,,"The explanation is **incorrect**.
+
+Here is the reasoning:
+
+1.  **Business Day Convention:** The explanation correctly identifies that August 31, 2024, is a Saturday. Under the **Modified Following** convention, if the next business day falls into the next month, the date is adjusted to the *preceding* business day. August 30, 2024, is a Friday and is a valid business day in New York. Therefore, the adjusted payment date is indeed August 30, 2024.
+2.  **Accrual Period Calculation:** The explanation states the accrual period is from February 29, 2024, to August 30, 2024.
+    *   February 29 to March 31: 31 days
+    *   April: 30 days
+    *   May: 31 days
+    *   June: 30 days
+    *   July: 31 days
+    *   August 1 to August 30: 30 days
+    *   Total: 31 + 30 + 31 + 30 + 31 + 30 = **183 days**.
+    *   *Correction:* The calculation of days is correct, but the explanation fails to account for the partial month of February. Since the period starts on February 29, the days in February are 0 (if excluding the start date) or 1 (if including the start date). Standard financial practice for ""ACT/360"" usually counts the number of days between dates. From Feb 29 to Aug 30 is 184 days (Feb 29 is day 60 of 2024, Aug 30 is day 244 of 2024; 244 - 60 = 184). The explanation missed the leap day (Feb 29) in its count.
+3.  **Interest Calculation:** Using the correct day count of 184:
+    *   $1,000,000 \times 0.05 \times (184 / 360) = 25,555.56$.
+    *   The explanation used 183 days, leading to an incorrect interest amount of $25,416.67.
+
+Because the day count calculation is flawed (missing the leap day) and the resulting interest amount is incorrect, the explanation is not fully correct.
+
+VERDICT: INCORRECT",y,n/a (failure),"Day-of-year error (Aug 30 = day 244; it is 243) gives 184 days; invents ""missed the leap day""",A. Arithmetic slip turned into a false correction
+gemini-3.1-flash-lite,S1_correct,5,CORRECT,INCORRECT,false_fail,,"The explanation is **incorrect**.
+
+Here is the reasoning:
+
+1.  **Business Day Convention:** The explanation correctly identifies that August 31, 2024, is a Saturday. Under the **Modified Following** convention, if the next business day falls into the next month, the date is adjusted to the *preceding* business day. August 30, 2024, is a Friday and is a valid business day in New York. Therefore, the adjusted payment date is indeed August 30, 2024.
+2.  **Accrual Period Calculation:** The explanation states the accrual period is from February 29, 2024, to August 30, 2024.
+    *   February 29 to March 31: 31 days
+    *   April: 30 days
+    *   May: 31 days
+    *   June: 30 days
+    *   July: 31 days
+    *   August 1 to August 30: 30 days
+    *   Total: 31 + 30 + 31 + 30 + 31 + 30 = **183 days**.
+    *   *Correction:* The calculation of days is correct, but the explanation fails to account for the partial month of February. Since the period starts on February 29, the days in February are 0 (if excluding the start date) or 1 (if including the start date). Standard financial practice for ""ACT/360"" usually counts the number of days between dates. From Feb 29 to Aug 30 is 184 days (Feb 29 is day 60 of 2024, Aug 30 is day 244 of 2024; 244 - 60 = 184). The explanation missed the leap day (Feb 29) in its count.
+3.  **Interest Calculation:** Using the correct day count of 184:
+    *   $1,000,000 \times 0.05 \times (184 / 360) = 25,555.56$.
+    *   The explanation used 183 days, leading to an incorrect interest amount of $25,416.67.
+
+Because the day count calculation is flawed (missing the leap day) and the resulting interest amount is incorrect, the explanation is not fully correct.
+
+VERDICT: INCORRECT",y,n/a (failure),"Day-of-year error (Aug 30 = day 244; it is 243) gives 184 days; invents ""missed the leap day""",A. Arithmetic slip turned into a false correction
+gemini-3.1-flash-lite,S8_correct,1,CORRECT,INCORRECT,false_fail,,"The explanation provided is **incorrect**.
+
+**Reasoning:**
+1.  **Day Count Calculation:** Under the 30/360 (Bond Basis) convention, the rules for adjusting dates are:
+    *   If D1 is 31, change D1 to 30.
+    *   If D2 is 31 and D1 is 30 or greater, change D2 to 30.
+    *   In this case:
+        *   Start Date: August 31, 2023. Since D1 is 31, it is adjusted to **30**.
+        *   End Date: February 29, 2024. Since D2 is 29 (not 31), it remains **29**.
+    *   The calculation should be:
+        *   Years: $2024 - 2023 = 1$ year ($360$ days).
+        *   Months: $2 - 8 = -6$ months ($-180$ days).
+        *   Days: $29 - 30 = -1$ day.
+        *   Total: $360 - 180 - 1 = 179$ days.
+    *   The explanation correctly identifies the number of days as 179, but the logic used to arrive there is slightly confused regarding the adjustment rules (it claims D2=29 stays as is, which is correct, but the application of the D1 adjustment is the primary driver).
+
+2.  **The Fatal Error:** The explanation calculates interest using the formula: **Principal × Rate × (Days / 360)**.
+    *   While the 30/360 convention uses a 360-day denominator for the *day count fraction*, the interest calculation for a period spanning multiple months must account for the annual rate correctly.
+    *   The formula used ($10,000,000 \times 0.03875 \times 179 / 360$) is mathematically equivalent to calculating interest for 179 days based on a 360-day year. However, the interest period from August 31, 2023, to February 29, 2024, is exactly **half a year** (6 months).
+    *   Using the 30/360 convention, 6 months is defined as $6 \times 30 = 180$ days.
+    *   The calculation $10,000,000 \times 0.03875 \times (180/360) = 193,750$.
+    *   The explanation incorrectly uses 179 days instead of 180 days. Under the 30/360 convention, the period from August 30 to February 30 (which is how the dates are treated) is exactly 180 days. By using 179, the explanation fails to apply the 30/360 convention correctly for a full 6-month period.
+
+VERDICT: INCORRECT",y,n/a (failure),"""Exactly half a year"" so 6 x 30 = 180; treats Feb 29 as Feb 30",B. 30/360 variant confusion
+gemini-3.1-flash-lite,S8_correct,2,CORRECT,INCORRECT,false_fail,,"The explanation provided is **incorrect**.
+
+**Reasoning:**
+1.  **Day Count Calculation:** Under the 30/360 (Bond Basis) convention, the rules for adjusting dates are:
+    *   If D1 is 31, change D1 to 30.
+    *   If D2 is 31 and D1 is 30 or greater, change D2 to 30.
+    *   In this case:
+        *   Start Date: August 31, 2023. Since D1 is 31, it is adjusted to **30**.
+        *   End Date: February 29, 2024. Since D2 is 29 (not 31), it remains **29**.
+    *   The calculation should be:
+        *   Years: $2024 - 2023 = 1$ year ($360$ days).
+        *   Months: $2 - 8 = -6$ months ($-180$ days).
+        *   Days: $29 - 30 = -1$ day.
+        *   Total: $360 - 180 - 1 = 179$ days.
+    *   The explanation correctly identifies the number of days as 179, but the logic used to arrive there is slightly confused regarding the adjustment rules (it claims D2=29 stays as is, which is correct, but the application of the D1 adjustment is the primary driver).
+
+2.  **The Fatal Error:** The explanation calculates interest using the formula: **Principal × Rate × (Days / 360)**.
+    *   While the 30/360 convention uses a 360-day denominator for the *day count fraction*, the interest calculation for a period spanning multiple months must account for the annual rate correctly.
+    *   The formula used ($10,000,000 \times 0.03875 \times 179 / 360$) is mathematically equivalent to calculating interest for 179 days based on a 360-day year. However, the interest period from August 31, 2023, to February 29, 2024, is exactly **half a year** (6 months).
+    *   Using the 30/360 convention, 6 months is defined as $6 \times 30 = 180$ days.
+    *   The calculation $10,000,000 \times 0.03875 \times (180/360) = 193,750$.
+    *   The explanation incorrectly uses 179 days instead of 180 days. Under the 30/360 convention, the period from August 30 to February 30 (which is how the dates are treated) is exactly 180 days. By using 179, the explanation fails to apply the 30/360 convention correctly for a full 6-month period.
+
+VERDICT: INCORRECT",y,n/a (failure),"""Exactly half a year"" so 6 x 30 = 180; treats Feb 29 as Feb 30",B. 30/360 variant confusion
+gemini-3.1-flash-lite,S8_correct,3,CORRECT,INCORRECT,false_fail,,"The explanation provided is **incorrect**.
+
+**Reasoning:**
+1.  **Day Count Calculation:** Under the 30/360 (Bond Basis) convention, the rules for adjusting dates are:
+    *   If D1 is 31, change D1 to 30.
+    *   If D2 is 31 and D1 is 30 or greater, change D2 to 30.
+    *   In this case:
+        *   Start Date: August 31, 2023. Since D1 is 31, it is adjusted to **30**.
+        *   End Date: February 29, 2024. Since D2 is 29 (not 31), it remains **29**.
+    *   The calculation should be:
+        *   Years: $2024 - 2023 = 1$ year ($360$ days).
+        *   Months: $2 - 8 = -6$ months ($-180$ days).
+        *   Days: $29 - 30 = -1$ day.
+        *   Total: $360 - 180 - 1 = 179$ days.
+    *   The explanation correctly identifies the number of days as 179, but the logic used to arrive there is slightly confused regarding the adjustment rules (it claims D2=29 stays as is, which is correct, but the application of the D1 adjustment is the primary driver).
+
+2.  **The Fatal Error:** The explanation calculates interest using the formula: **Principal × Rate × (Days / 360)**.
+    *   While the 30/360 convention uses a 360-day denominator for the *day count fraction*, the interest calculation for a period spanning multiple months must account for the annual rate correctly.
+    *   The formula used ($10,000,000 \times 0.03875 \times 179 / 360$) is mathematically equivalent to calculating interest for 179 days based on a 360-day year. However, the interest period from August 31, 2023, to February 29, 2024, is exactly **half a year** (6 months).
+    *   Using the 30/360 convention, 6 months is defined as $6 \times 30 = 180$ days.
+    *   The calculation $10,000,000 \times 0.03875 \times (180/360) = 193,750$.
+    *   The explanation incorrectly uses 179 days instead of 180 days. Under the 30/360 convention, the period from August 30 to February 30 (which is how the dates are treated) is exactly 180 days. By using 179, the explanation fails to apply the 30/360 convention correctly for a full 6-month period.
+
+VERDICT: INCORRECT",y,n/a (failure),"""Exactly half a year"" so 6 x 30 = 180; treats Feb 29 as Feb 30",B. 30/360 variant confusion
+gemini-3.1-flash-lite,S8_correct,4,CORRECT,INCORRECT,false_fail,,"The explanation provided is **incorrect**.
+
+**Reasoning:**
+1.  **Day Count Calculation:** Under the 30/360 (Bond Basis) convention, the rules for adjusting dates are:
+    *   If D1 is 31, change D1 to 30.
+    *   If D2 is 31 and D1 is 30 or greater, change D2 to 30.
+    *   In this case:
+        *   Start Date: August 31, 2023. Since D1 is 31, it is adjusted to **30**.
+        *   End Date: February 29, 2024. Since D2 is 29 (not 31), it remains **29**.
+    *   The calculation should be:
+        *   Years: $2024 - 2023 = 1$ year ($360$ days).
+        *   Months: $2 - 8 = -6$ months ($-180$ days).
+        *   Days: $29 - 30 = -1$ day.
+        *   Total: $360 - 180 - 1 = 179$ days.
+    *   The explanation correctly identifies the number of days as 179, but the logic used to arrive there is slightly confused regarding the adjustment rules (it claims D2=29 stays as is, which is correct, but the application of the D1 adjustment is the primary driver).
+
+2.  **The Fatal Error:** The explanation calculates interest using the formula: **Principal × Rate × (Days / 360)**.
+    *   While the 30/360 convention uses a 360-day denominator for the *day count fraction*, the interest calculation for a period spanning multiple months must account for the annual rate correctly.
+    *   The formula used ($10,000,000 \times 0.03875 \times 179 / 360$) is mathematically equivalent to calculating interest for 179 days based on a 360-day year. However, the interest period from August 31, 2023, to February 29, 2024, is exactly **half a year** (6 months).
+    *   Using the 30/360 convention, 6 months is defined as $6 \times 30 = 180$ days.
+    *   The calculation $10,000,000 \times 0.03875 \times (180/360) = 193,750$.
+    *   The explanation incorrectly uses 179 days instead of 180 days. Under the 30/360 convention, the period from August 30 to February 30 (which is how the dates are treated) is exactly 180 days. By using 179, the explanation fails to apply the 30/360 convention correctly for a full 6-month period.
+
+VERDICT: INCORRECT",y,n/a (failure),"""Exactly half a year"" so 6 x 30 = 180; treats Feb 29 as Feb 30",B. 30/360 variant confusion
+gemini-3.1-flash-lite,S8_correct,5,CORRECT,INCORRECT,false_fail,,"The explanation provided is **incorrect**.
+
+**Reasoning:**
+1.  **Day Count Calculation:** Under the 30/360 (Bond Basis) convention, the rules for adjusting dates are:
+    *   If D1 is 31, change D1 to 30.
+    *   If D2 is 31 and D1 is 30 or greater, change D2 to 30.
+    *   In this case:
+        *   Start Date: August 31, 2023. Since D1 is 31, it is adjusted to **30**.
+        *   End Date: February 29, 2024. Since D2 is 29 (not 31), it remains **29**.
+    *   The calculation should be:
+        *   Years: $2024 - 2023 = 1$ year ($360$ days).
+        *   Months: $2 - 8 = -6$ months ($-180$ days).
+        *   Days: $29 - 30 = -1$ day.
+        *   Total: $360 - 180 - 1 = 179$ days.
+    *   The explanation correctly identifies the number of days as 179, but the logic used to arrive there is slightly confused regarding the adjustment rules (it claims D2=29 stays as is, which is correct, but the application of the D1 adjustment is the primary driver).
+
+2.  **The Fatal Error:** The explanation calculates interest using the formula: **Principal × Rate × (Days / 360)**.
+    *   While the 30/360 convention uses a 360-day denominator for the *day count fraction*, the interest calculation for a period spanning multiple months must account for the annual rate correctly.
+    *   The formula used ($10,000,000 \times 0.03875 \times 179 / 360$) is mathematically equivalent to calculating interest for 179 days based on a 360-day year. However, the interest period from August 31, 2023, to February 29, 2024, is exactly **half a year** (6 months).
+    *   Using the 30/360 convention, 6 months is defined as $6 \times 30 = 180$ days.
+    *   The calculation $10,000,000 \times 0.03875 \times (180/360) = 193,750$.
+    *   The explanation incorrectly uses 179 days instead of 180 days. Under the 30/360 convention, the period from August 30 to February 30 (which is how the dates are treated) is exactly 180 days. By using 179, the explanation fails to apply the 30/360 convention correctly for a full 6-month period.
+
+VERDICT: INCORRECT",y,n/a (failure),"""Exactly half a year"" so 6 x 30 = 180; treats Feb 29 as Feb 30",B. 30/360 variant confusion
+gemini-3.5-flash-lite,S1_correct,2,CORRECT,INCORRECT,false_fail,,"To determine if the explanation is fully correct, let's break down each component:
+
+1. **Business Day Convention (Modified Following) and Payment Date:**
+   - The scheduled payment date is Saturday, August 31, 2024.
+   - Under the *Following* convention, a non-business day rolls to the next business day. September 1 is Sunday, and September 2 is Labor Day (Monday). Therefore, the next business day would be Tuesday, September 3, 2024.
+   - Under the *Modified Following* convention, if the next business day falls into the next calendar month, the date rolls backward to the first preceding business day. Since September 3 is in September (a different month than August), the date rolls backward to Friday, August 30, 2024 (as Friday, August 30 is a New York banking business day). The explanation correctly determines the adjusted payment date.
+
+2. **Accrual Period and Day Count (ACT/360):**
+   - The interest period starts on Thursday, February 29, 2024 (2024 is a leap year, so February has 29 days).
+   - Interest accrues to the adjusted payment date, which is August 30, 2024.
+   - Let's count the actual days from Feb 29, 2024, to Aug 30, 2024:
+     - Feb 29 to Mar 31: 31 days
+     - March: 31 days
+     - April: 30 days
+     - May: 31 days
+     - June: 30 days
+     - July: 31 days
+     - August 1 to August 30: 30 days
+     - Total = 31 + 31 + 30 + 31 + 30 + 31 + 30 = 184 days.
+   - Let's verify via date math: 
+     - Feb 29 to Aug 29 is exactly 6 months. 
+     - Feb 29 to Mar 29 (31), Mar 29 to Apr 29 (31), Apr 29 to May 29 (30), May 29 to Jun 29 (31), Jun 29 to Jul 29 (30), Jul 29 to Aug 29 (31). Total days in those 6 months = 31+31+30+31+30+31 = 184 days.
+     - From August 29 to August 30 is 1 additional day.
+     - Total actual days = 184 + 1 = 185 days.
+   - The explanation states there are **183 days**, which is incorrect (it missed 2 days). 
+
+3. **Interest Calculation:**
+   - Using the correct number of days (185 days): 
+     $1,000,000 \times 0.05 \times 185 / 360 = \$25,694.44$
+   - The explanation's calculation ($\$25,416.67$) is based on the incorrect day count of 183 days.
+
+Because the day count and final interest amount contain errors, the explanation is not fully correct.
+
+VERDICT: INCORRECT",y,n/a (failure),"Month-to-month count from the 29th mis-summed, gives 185 days",A. Arithmetic slip turned into a false correction
+gemini-3.5-flash-lite,S8_error,1,INCORRECT,CORRECT,false_pass,Treats February 29 as day 30. Under 30/360 Bond Basis only day 31 is adjusted; the February month-end rule belongs to other 30/360 variants (e.g. 30E/360 ISDA).,"To determine whether the explanation is fully correct, let's break down each component of the calculation:
+
+1. **Business Day Convention & Payment Date:**
+   - The scheduled payment date is February 29, 2024. 
+   - February 29, 2024, is a Thursday and a standard business day in the United States (New York). Therefore, no adjustment is required under the Modified Following convention. The payment date is indeed Thursday, February 29, 2024.
+
+2. **Day Count Fraction (30/360 Bond Basis):**
+   - **Start Date:** August 31, 2023 ($Y_1 = 2023, M_1 = 8, D_1 = 31$). Under the 30/360 rule, since $D_1$ is 31, it is adjusted to 30.
+   - **End Date:** February 29, 2024 ($Y_2 = 2024, M_2 = 2, D_2 = 29$). Under the standard ISDA 30/360 (Bond Basis) month-end rule, if the first date is a 31st and the second date is the last day of February (and the first date is not also the last day of February), the second date's day must be adjusted to 30. Therefore, $D_2$ becomes 30.
+   - **Calculation:** 
+     $$\text{Days} = 360 \times (2024 - 2023) + 30 \times (2 - 8) + (30 - 30) = 360 - 180 + 0 = 180 \text{ days}.$$
+   - The accrual period correctly evaluates to 180 days.
+
+3. **Interest Amount:**
+   - $\text{Interest} = \text{Principal} \times \text{Rate} \times \left(\frac{\text{Days}}{360}\right)$
+   - $\text{Interest} = 10,000,000 \times 0.03875 \times \frac{180}{360} = 10,000,000 \times 0.03875 \times 0.5 = 193,750.00$.
+   - The interest due is correctly calculated as USD 193,750.00.
+
+The explanation accurately applies the calendar rules, day count conventions, and arithmetic.
+
+VERDICT: CORRECT",y,n/a (failure),"Accepts D2 = 30 or ""6 full months x 30 = 180""",B. 30/360 variant confusion
+gemini-3.5-flash-lite,S8_error,3,INCORRECT,CORRECT,false_pass,Treats February 29 as day 30. Under 30/360 Bond Basis only day 31 is adjusted; the February month-end rule belongs to other 30/360 variants (e.g. 30E/360 ISDA).,"To determine if the explanation is fully correct, let's break down the components of the review:
+
+1. **Payment Date & Business Day Convention:** 
+   - The scheduled payment date is February 29, 2024. 
+   - February 29, 2024, is a Thursday and a standard business day in New York (not a weekend or US federal holiday). Therefore, no adjustment is required under the Modified Following convention. The payment date is correctly identified as Thursday, February 29, 2024.
+
+2. **Accrual Period and Day Count Convention (30/360):**
+   - Interest accrues from August 31, 2023, to February 29, 2024.
+   - Under the 30/360 (Bond Basis) convention, the rules for day counting are applied as follows:
+     - Start Date ($D_1$): August 31 becomes 30 (since the 31st rule applies to the first date if it is the 31st).
+     - End Date ($D_2$): February 29 is the last day of February, and under standard 30/360 month-end rules (ISDA/Bond Basis), if $D_1$ is set to 30 because it was the last day of the month, a termination date that falls on the last day of February also has its day adjusted to 30. Therefore, $D_2 = 30$.
+   - Calculating the difference:
+     - Years: $2024 - 2023 = 1$ year ($\times 360 = 360$ days)
+     - Months: $2 - 8 = -6$ months ($\times 30 = -180$ days)
+     - Days: $30 - 30 = 0$ days
+     - Total Days = $360 - 180 + 0 = 180$ days. (Alternatively, from Aug 31 to Feb 29 is 6 full months $\times 30 = 180$ days). The day count of 180 days is correct.
+
+3. **Interest Amount Calculation:**
+   - Formula: $\text{Principal} \times \text{Rate} \times \frac{\text{Days}}{360}$
+   - Calculation: $10,000,000 \times 0.03875 \times \frac{180}{360} = 10,000,000 \times 0.03875 \times 0.5 = 193,750.00$.
+   - The interest amount of USD 193,750.00 is correct.
+
+All steps in the explanation—including the calendar check, application of the 30/360 day-count convention, and final arithmetic—are accurate.
+
+VERDICT: CORRECT",y,n/a (failure),"Accepts D2 = 30 or ""6 full months x 30 = 180""",B. 30/360 variant confusion
+gemini-3.5-flash-lite,S8_error,4,INCORRECT,CORRECT,false_pass,Treats February 29 as day 30. Under 30/360 Bond Basis only day 31 is adjusted; the February month-end rule belongs to other 30/360 variants (e.g. 30E/360 ISDA).,"To determine if the explanation is fully correct, let's break down the components of the review:
+
+1. **Payment Date and Business Day Convention:**
+   - The scheduled payment date is February 29, 2024. 
+   - February 29, 2024, is a Thursday and a valid New York banking business day (2024 is a leap year). Therefore, no adjustment is required under the Modified Following convention, making the payment date Thursday, February 29, 2024. This is correct.
+
+2. **Accrual Period and Day Count Convention (30/360):**
+   - The period starts on August 31, 2023, and ends on February 29, 2024.
+   - Under the 30/360 (Bond Basis) convention:
+     - Start Date ($Y_1 = 2023, M_1 = 8, D_1 = 31$). Per the 30/360 rule, if $D_1$ is 31, it becomes 30.
+     - End Date ($Y_2 = 2024, M_2 = 2, D_2 = 29$). Per standard 30/360 rules (ISDA/Bond Basis), if the first date is a 30th or a 31st and the second date is the last day of February, the second date must *also* be changed to 30. 
+     - Let's check the math in the explanation: $D_2 = 29$ is treated as 30 due to the month-end rule. 
+     - Calculation: 
+       - Years: $360 \times (2024 - 2023) = 360$
+       - Months: $30 \times (2 - 8) = 30 \times (-6) = -180$
+       - Days: $(30 - 30) = 0$
+       - Total Days = $360 - 180 + 0 = 180$ days.
+     - Alternatively, counting by full months: August 31 to February 28/29 is exactly 6 months (September, October, November, December, January, plus the end of August to end of February). $6 \text{ months} \times 30 \text{ days/month} = 180 \text{ days}$. 
+     - The day count of 180 days is correct.
+
+3. **Interest Amount Calculation:**
+   - Formula: $\text{Principal} \times \text{Rate} \times \frac{\text{Days}}{360}$
+   - Calculation: $10,000,000 \times 0.03875 \times \frac{180}{360} = 10,000,000 \times 0.03875 \times 0.5 = 193,750.00$.
+   - The interest amount of USD 193,750.00 is correct.
+
+Every step of the explanation, including the calendar check, day-count application, and financial arithmetic, is accurate.
+
+VERDICT: CORRECT",y,n/a (failure),"Accepts D2 = 30 or ""6 full months x 30 = 180""",B. 30/360 variant confusion
+gemini-3.5-flash-lite,S8_error,5,INCORRECT,CORRECT,false_pass,Treats February 29 as day 30. Under 30/360 Bond Basis only day 31 is adjusted; the February month-end rule belongs to other 30/360 variants (e.g. 30E/360 ISDA).,"To determine whether the explanation is fully correct, let's break down each component of the calculation:
+
+1. **Business Day Convention & Payment Date:**
+   - The scheduled payment date is February 29, 2024. 
+   - February 29, 2024, is a Thursday and a standard business day in the United States (New York banking calendar). Therefore, applying the Modified Following business day convention results in no adjustment. The payment date remains **February 29, 2024**. The explanation is correct on this point.
+
+2. **Accrual Period and Day Count Convention (30/360):**
+   - **Start Date:** August 31, 2023. Under 30/360, the 31st is treated as day 30 ($D_1 = 30$).
+   - **End Date:** February 29, 2024. Under standard ISDA 30/360 rules (specifically the Bond Basis/US 30/360 convention), if the termination date is the last day of February and the start date was the 30th or 31st of a month, the end-of-February date is also adjusted to the 30th ($D_2 = 30$). 
+   - Let's check the formula: 
+     - Year difference: $2024 - 2023 = 1$ year $\rightarrow 360 \times 1 = 360$ days.
+     - Month difference: February (month 2) minus August (month 8) $\rightarrow 2 - 8 = -6$ months $\rightarrow 30 \times (-6) = -180$ days.
+     - Day difference: $30 - 30 = 0$ days.
+     - Total days $= 360 - 180 + 0 = 180$ days.
+   - Alternatively, counting by months: September, October, November, December, January, February = 6 full months $\times 30$ days/month = 180 days.
+   - The explanation correctly determines the accrual period to be 180 days.
+
+3. **Interest Amount Calculation:**
+   - Formula: $\text{Principal} \times \text{Rate} \times \frac{\text{Days}}{360}$
+   - Calculation: $\$10,000,000 \times 0.03875 \times \frac{180}{360} = \$10,000,000 \times 0.03875 \times 0.5 = \$193,750.00$.
+   - The explanation correctly computes the interest amount.
+
+Since all steps—business day adjustment, day count application, and final interest math—are accurate, the explanation is fully correct.
+
+VERDICT: CORRECT",y,n/a (failure),"Accepts D2 = 30 or ""6 full months x 30 = 180""",B. 30/360 variant confusion
+gemma-4-31b,S8_error,1,INCORRECT,CORRECT,false_pass,Treats February 29 as day 30. Under 30/360 Bond Basis only day 31 is adjusted; the February month-end rule belongs to other 30/360 variants (e.g. 30E/360 ISDA).,"The explanation provided is fully correct. Here is the step-by-step verification:
+
+1.  **Payment Date**: The scheduled payment date is Thursday, February 29, 2024. In the US (New York) banking calendar, February 29, 2024, is a regular business day (it is not a weekend or a federal holiday). Therefore, under the Modified Following business day convention, no adjustment is necessary. The payment date remains February 29, 2024.
+
+2.  **Accrual Period**: The interest accrues from August 31, 2023, to the unadjusted scheduled period end date of February 29, 2024.
+
+3.  **Day Count (30/360 Bond Basis)**:
+    *   **D1 (Start Date)**: August 31. According to the 30/360 (US/Bond Basis) rule, if D1 is 31, it is changed to 30. Thus, $D1 = 30$.
+    *   **D2 (End Date)**: February 29. According to the 30/360 (US/Bond Basis) rule, if D2 is the last day of February and D1 is 30 or 31, D2 is changed to 30. Since D1 was 31 (and adjusted to 30), $D2 = 30$.
+    *   **Calculation**:
+        $$\text{Days} = 360 \times (Y_2 - Y_1) + 30 \times (M_2 - M_1) + (D_2 - D_1)$$
+        $$\text{Days} = 360 \times (2024 - 2023) + 30 \times (2 - 8) + (30 - 30)$$
+        $$\text{Days} = 360 \times 1 + 30 \times (-6) + 0 = 360 - 180 = 180 \text{ days.}$$
+
+4.  **Interest Calculation**:
+    $$\text{Interest} = \text{Principal} \times \text{Rate} \times \left(\frac{\text{Days}}{360}\right)$$
+    $$\text{Interest} = 10,000,000 \times 0.03875 \times \left(\frac{180}{360}\right)$$
+    $$\text{Interest} = 10,000,000 \times 0.03875 \times 0.5 = 387,500 \times 0.5 = 193,750.00$$
+
+The payment date and the interest amount calculated in the explanation are both correct.
+
+VERDICT: CORRECT",y,n/a (failure),"Computes with D2 = 30 (invented end-of-February rule), confirms 180",B. 30/360 variant confusion
+gemma-4-31b,S8_error,2,INCORRECT,CORRECT,false_pass,Treats February 29 as day 30. Under 30/360 Bond Basis only day 31 is adjusted; the February month-end rule belongs to other 30/360 variants (e.g. 30E/360 ISDA).,"The explanation provided is fully correct. Here is the step-by-step verification:
+
+1.  **Payment Date**: The scheduled payment date is Thursday, February 29, 2024. In the US (New York) banking calendar, February 29, 2024, is a regular business day (it is not a weekend or a federal holiday). Therefore, under the Modified Following business day convention, no adjustment is necessary. The payment date remains February 29, 2024.
+
+2.  **Accrual Period**: The interest accrues from August 31, 2023, to the unadjusted scheduled period end date of February 29, 2024.
+
+3.  **Day Count (30/360 Bond Basis)**:
+    *   **D1 (Start Date)**: August 31. According to the 30/360 (US/Bond Basis) rule, if D1 is 31, it is changed to 30. Thus, $D1 = 30$.
+    *   **D2 (End Date)**: February 29. According to the 30/360 (US/Bond Basis) rule, if D2 is the last day of February and D1 is 30 or 31, D2 is changed to 30. Since D1 was 31 (and adjusted to 30), $D2 = 30$.
+    *   **Calculation**:
+        $$\text{Days} = 360 \times (Y_2 - Y_1) + 30 \times (M_2 - M_1) + (D_2 - D_1)$$
+        $$\text{Days} = 360 \times (2024 - 2023) + 30 \times (2 - 8) + (30 - 30)$$
+        $$\text{Days} = 360 \times 1 + 30 \times (-6) + 0 = 360 - 180 = 180 \text{ days.}$$
+
+4.  **Interest Calculation**:
+    $$\text{Interest} = \text{Principal} \times \text{Rate} \times \left(\frac{\text{Days}}{360}\right)$$
+    $$\text{Interest} = 10,000,000 \times 0.03875 \times \left(\frac{180}{360}\right)$$
+    $$\text{Interest} = 10,000,000 \times 0.03875 \times 0.5 = 387,500 \times 0.5 = 193,750.00$$
+
+The payment date and the interest amount calculated in the explanation are both correct.
+
+VERDICT: CORRECT",y,n/a (failure),"Computes with D2 = 30 (invented end-of-February rule), confirms 180",B. 30/360 variant confusion
+gemma-4-31b,S8_error,3,INCORRECT,CORRECT,false_pass,Treats February 29 as day 30. Under 30/360 Bond Basis only day 31 is adjusted; the February month-end rule belongs to other 30/360 variants (e.g. 30E/360 ISDA).,"The explanation provided is fully correct. Here is the step-by-step verification:
+
+1.  **Payment Date**: The scheduled payment date is Thursday, February 29, 2024. In the US (New York) banking calendar, February 29, 2024, is a regular business day (it is not a weekend or a federal holiday). Therefore, under the Modified Following business day convention, no adjustment is necessary. The payment date remains February 29, 2024.
+
+2.  **Accrual Period**: The interest accrues from August 31, 2023, to the unadjusted scheduled period end date of February 29, 2024.
+
+3.  **Day Count (30/360 Bond Basis)**:
+    *   **D1 (Start Date)**: August 31. According to the 30/360 (US/Bond Basis) rule, if D1 is 31, it is changed to 30. Thus, $D1 = 30$.
+    *   **D2 (End Date)**: February 29. According to the 30/360 (US/Bond Basis) rule, if D2 is the last day of February and D1 is 30 or 31, D2 is changed to 30. Since D1 was 31 (and adjusted to 30), $D2 = 30$.
+    *   **Calculation**:
+        $$\text{Days} = 360 \times (Y_2 - Y_1) + 30 \times (M_2 - M_1) + (D_2 - D_1)$$
+        $$\text{Days} = 360 \times (2024 - 2023) + 30 \times (2 - 8) + (30 - 30)$$
+        $$\text{Days} = 360 \times 1 + 30 \times (-6) + 0 = 360 - 180 = 180 \text{ days.}$$
+
+4.  **Interest Calculation**:
+    $$\text{Interest} = \text{Principal} \times \text{Rate} \times \left(\frac{\text{Days}}{360}\right)$$
+    $$\text{Interest} = 10,000,000 \times 0.03875 \times \left(\frac{180}{360}\right)$$
+    $$\text{Interest} = 10,000,000 \times 0.03875 \times 0.5 = 387,500 \times 0.5 = 193,750.00$$
+
+The payment date and the interest amount calculated in the explanation are both correct.
+
+VERDICT: CORRECT",y,n/a (failure),"Computes with D2 = 30 (invented end-of-February rule), confirms 180",B. 30/360 variant confusion
+gemma-4-31b,S8_error,4,INCORRECT,CORRECT,false_pass,Treats February 29 as day 30. Under 30/360 Bond Basis only day 31 is adjusted; the February month-end rule belongs to other 30/360 variants (e.g. 30E/360 ISDA).,"The explanation provided is fully correct. Here is the step-by-step verification:
+
+1.  **Payment Date**: The scheduled payment date is Thursday, February 29, 2024. In the US (New York) banking calendar, February 29, 2024, is a regular business day (it is not a weekend or a federal holiday). Therefore, under the Modified Following business day convention, no adjustment is necessary. The payment date remains February 29, 2024.
+
+2.  **Accrual Period**: The interest accrues from August 31, 2023, to the unadjusted scheduled period end date of February 29, 2024.
+
+3.  **Day Count (30/360 Bond Basis)**:
+    *   **D1 (Start Date)**: August 31. According to the 30/360 (US/Bond Basis) rule, if D1 is 31, it is changed to 30. Thus, $D1 = 30$.
+    *   **D2 (End Date)**: February 29. According to the 30/360 (US/Bond Basis) rule, if D2 is the last day of February and D1 is 30 or 31, D2 is changed to 30. Since D1 was 31 (and adjusted to 30), $D2 = 30$.
+    *   **Calculation**:
+        $$\text{Days} = 360 \times (Y_2 - Y_1) + 30 \times (M_2 - M_1) + (D_2 - D_1)$$
+        $$\text{Days} = 360 \times (2024 - 2023) + 30 \times (2 - 8) + (30 - 30)$$
+        $$\text{Days} = 360 \times 1 + 30 \times (-6) + 0 = 360 - 180 = 180 \text{ days.}$$
+
+4.  **Interest Calculation**:
+    $$\text{Interest} = \text{Principal} \times \text{Rate} \times \left(\frac{\text{Days}}{360}\right)$$
+    $$\text{Interest} = 10,000,000 \times 0.03875 \times \left(\frac{180}{360}\right)$$
+    $$\text{Interest} = 10,000,000 \times 0.03875 \times 0.5 = 387,500 \times 0.5 = 193,750.00$$
+
+The payment date and the interest amount calculated in the explanation are both correct.
+
+VERDICT: CORRECT",y,n/a (failure),"Computes with D2 = 30 (invented end-of-February rule), confirms 180",B. 30/360 variant confusion
+gemma-4-31b,S8_error,5,INCORRECT,CORRECT,false_pass,Treats February 29 as day 30. Under 30/360 Bond Basis only day 31 is adjusted; the February month-end rule belongs to other 30/360 variants (e.g. 30E/360 ISDA).,"The explanation provided is fully correct. Here is the step-by-step verification:
+
+1.  **Payment Date**: The scheduled payment date is Thursday, February 29, 2024. In the US (New York) banking calendar, February 29, 2024, is a regular business day (it is not a weekend or a federal holiday). Therefore, under the Modified Following business day convention, no adjustment is necessary. The payment date remains February 29, 2024.
+
+2.  **Accrual Period**: The interest accrues from August 31, 2023, to the unadjusted scheduled period end date of February 29, 2024.
+
+3.  **Day Count (30/360 Bond Basis)**:
+    *   **D1 (Start Date)**: August 31. According to the 30/360 (US/Bond Basis) rule, if D1 is 31, it is changed to 30. Thus, $D1 = 30$.
+    *   **D2 (End Date)**: February 29. According to the 30/360 (US/Bond Basis) rule, if D2 is the last day of February and D1 is 30 or 31, D2 is changed to 30. Since D1 was 31 (and adjusted to 30), $D2 = 30$.
+    *   **Calculation**:
+        $$\text{Days} = 360 \times (Y_2 - Y_1) + 30 \times (M_2 - M_1) + (D_2 - D_1)$$
+        $$\text{Days} = 360 \times (2024 - 2023) + 30 \times (2 - 8) + (30 - 30)$$
+        $$\text{Days} = 360 \times 1 + 30 \times (-6) + 0 = 360 - 180 = 180 \text{ days.}$$
+
+4.  **Interest Calculation**:
+    $$\text{Interest} = \text{Principal} \times \text{Rate} \times \left(\frac{\text{Days}}{360}\right)$$
+    $$\text{Interest} = 10,000,000 \times 0.03875 \times \left(\frac{180}{360}\right)$$
+    $$\text{Interest} = 10,000,000 \times 0.03875 \times 0.5 = 387,500 \times 0.5 = 193,750.00$$
+
+The payment date and the interest amount calculated in the explanation are both correct.
+
+VERDICT: CORRECT",y,n/a (failure),"Computes with D2 = 30 (invented end-of-February rule), confirms 180",B. 30/360 variant confusion
+gemini-3-flash,S8_error,2,INCORRECT,CORRECT,false_pass,Treats February 29 as day 30. Under 30/360 Bond Basis only day 31 is adjusted; the February month-end rule belongs to other 30/360 variants (e.g. 30E/360 ISDA).,"The explanation provided is fully correct. Here is the step-by-step reasoning:
+
+1.  **Payment Date Adjustment**: The scheduled payment date is February 29, 2024. Under the **Modified Following** business day convention, a payment date is adjusted only if it falls on a weekend or a holiday. February 29, 2024, is a Thursday and is not a banking holiday in New York (Presidents' Day was February 19). Therefore, no adjustment is needed, and the payment date remains Thursday, February 29, 2024.
+
+2.  **Accrual Period**: The prompt states that interest accrues to the unadjusted scheduled period end date. Thus, the accrual period is from August 31, 2023, to February 29, 2024, regardless of any business day adjustments.
+
+3.  **Day Count Calculation (30/360 Bond Basis)**:
+    *   The start date is August 31, 2023 ($Y1=2023, M1=8, D1=31$).
+    *   The end date is February 29, 2024 ($Y2=2024, M2=2, D2=29$).
+    *   Under the 30/360 (Bond Basis/US) convention, if $D1$ is 31, it is changed to 30.
+    *   If $D1$ is 30 or 31 and $D2$ is the last day of February, $D2$ is changed to 30 (this is the ""month-end rule"" for February in the US Bond Basis convention).
+    *   Applying these rules: $D1 = 30$ and $D2 = 30$.
+    *   The formula for days is: $360 \times (Y2 - Y1) + 30 \times (M2 - M1) + (D2 - D1)$.
+    *   Substituting the values: $360 \times (2024 - 2023) + 30 \times (2 - 8) + (30 - 30) = 360 \times 1 + 30 \times (-6) + 0 = 360 - 180 = 180$ days.
+
+4.  **Interest Calculation**:
+    *   $\text{Interest} = \text{Principal} \times \text{Rate} \times \frac{\text{Days}}{360}$
+    *   $\text{Interest} = 10,000,000 \times 0.03875 \times \frac{180}{360} = 10,000,000 \times 0.03875 \times 0.5 = 193,750.00$.
+
+The explanation correctly identifies the payment date, the day count adjustment for February, the formula for the 30/360 convention, and the final interest amount.
+
+VERDICT: CORRECT",y,n/a (failure),Accepts 180 days / D2 = 30,B. 30/360 variant confusion

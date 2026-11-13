@@ -1,0 +1,236 @@
+===== gemini-3.1-flash-lite | S1_correct | run 1 | said INCORRECT, expected CORRECT
+start date) or 1 (if including the start date). Standard financial practice for "ACT/360" usually counts the number of days between dates. From Feb 29 to Aug 30 is 184 days (Feb 29 is day 60 of 2024, Aug 30 is day 244 of 2024; 244 - 60 = 184). The explanation missed the leap day (Feb 29) in its count.
+3.  **Interest Calculation:** Using the correct day count of 184:
+    *   $1,000,000 \times 0.05 \times (184 / 360) = 25,555.56$.
+    *   The explanation used 183 days, leading to an incorrect interest amount of $25,416.67.
+
+Because the day count calculation is flawed (missing the leap day) and the resulting interest amount is incorrect, the explanation is not fully correct.
+
+VERDICT: INCORRECT 
+
+===== gemini-3.1-flash-lite | S1_correct | run 2 | said INCORRECT, expected CORRECT
+start date) or 1 (if including the start date). Standard financial practice for "ACT/360" usually counts the number of days between dates. From Feb 29 to Aug 30 is 184 days (Feb 29 is day 60 of 2024, Aug 30 is day 244 of 2024; 244 - 60 = 184). The explanation missed the leap day (Feb 29) in its count.
+3.  **Interest Calculation:** Using the correct day count of 184:
+    *   $1,000,000 \times 0.05 \times (184 / 360) = 25,555.56$.
+    *   The explanation used 183 days, leading to an incorrect interest amount of $25,416.67.
+
+Because the day count calculation is flawed (missing the leap day) and the resulting interest amount is incorrect, the explanation is not fully correct.
+
+VERDICT: INCORRECT 
+
+===== gemini-3.1-flash-lite | S1_correct | run 3 | said INCORRECT, expected CORRECT
+start date) or 1 (if including the start date). Standard financial practice for "ACT/360" usually counts the number of days between dates. From Feb 29 to Aug 30 is 184 days (Feb 29 is day 60 of 2024, Aug 30 is day 244 of 2024; 244 - 60 = 184). The explanation missed the leap day (Feb 29) in its count.
+3.  **Interest Calculation:** Using the correct day count of 184:
+    *   $1,000,000 \times 0.05 \times (184 / 360) = 25,555.56$.
+    *   The explanation used 183 days, leading to an incorrect interest amount of $25,416.67.
+
+Because the day count calculation is flawed (missing the leap day) and the resulting interest amount is incorrect, the explanation is not fully correct.
+
+VERDICT: INCORRECT 
+
+===== gemini-3.1-flash-lite | S1_correct | run 4 | said INCORRECT, expected CORRECT
+start date) or 1 (if including the start date). Standard financial practice for "ACT/360" usually counts the number of days between dates. From Feb 29 to Aug 30 is 184 days (Feb 29 is day 60 of 2024, Aug 30 is day 244 of 2024; 244 - 60 = 184). The explanation missed the leap day (Feb 29) in its count.
+3.  **Interest Calculation:** Using the correct day count of 184:
+    *   $1,000,000 \times 0.05 \times (184 / 360) = 25,555.56$.
+    *   The explanation used 183 days, leading to an incorrect interest amount of $25,416.67.
+
+Because the day count calculation is flawed (missing the leap day) and the resulting interest amount is incorrect, the explanation is not fully correct.
+
+VERDICT: INCORRECT 
+
+===== gemini-3.1-flash-lite | S1_correct | run 5 | said INCORRECT, expected CORRECT
+start date) or 1 (if including the start date). Standard financial practice for "ACT/360" usually counts the number of days between dates. From Feb 29 to Aug 30 is 184 days (Feb 29 is day 60 of 2024, Aug 30 is day 244 of 2024; 244 - 60 = 184). The explanation missed the leap day (Feb 29) in its count.
+3.  **Interest Calculation:** Using the correct day count of 184:
+    *   $1,000,000 \times 0.05 \times (184 / 360) = 25,555.56$.
+    *   The explanation used 183 days, leading to an incorrect interest amount of $25,416.67.
+
+Because the day count calculation is flawed (missing the leap day) and the resulting interest amount is incorrect, the explanation is not fully correct.
+
+VERDICT: INCORRECT 
+
+===== gemini-3.1-flash-lite | S8_correct | run 1 | said INCORRECT, expected CORRECT
+/ 360$) is mathematically equivalent to calculating interest for 179 days based on a 360-day year. However, the interest period from August 31, 2023, to February 29, 2024, is exactly **half a year** (6 months).
+    *   Using the 30/360 convention, 6 months is defined as $6 \times 30 = 180$ days.
+    *   The calculation $10,000,000 \times 0.03875 \times (180/360) = 193,750$.
+    *   The explanation incorrectly uses 179 days instead of 180 days. Under the 30/360 convention, the period from August 30 to February 30 (which is how the dates are treated) is exactly 180 days. By using 179, the explanation fails to apply the 30/360 convention correctly for a full 6-month period.
+
+VERDICT: INCORRECT 
+
+===== gemini-3.1-flash-lite | S8_correct | run 2 | said INCORRECT, expected CORRECT
+/ 360$) is mathematically equivalent to calculating interest for 179 days based on a 360-day year. However, the interest period from August 31, 2023, to February 29, 2024, is exactly **half a year** (6 months).
+    *   Using the 30/360 convention, 6 months is defined as $6 \times 30 = 180$ days.
+    *   The calculation $10,000,000 \times 0.03875 \times (180/360) = 193,750$.
+    *   The explanation incorrectly uses 179 days instead of 180 days. Under the 30/360 convention, the period from August 30 to February 30 (which is how the dates are treated) is exactly 180 days. By using 179, the explanation fails to apply the 30/360 convention correctly for a full 6-month period.
+
+VERDICT: INCORRECT 
+
+===== gemini-3.1-flash-lite | S8_correct | run 3 | said INCORRECT, expected CORRECT
+/ 360$) is mathematically equivalent to calculating interest for 179 days based on a 360-day year. However, the interest period from August 31, 2023, to February 29, 2024, is exactly **half a year** (6 months).
+    *   Using the 30/360 convention, 6 months is defined as $6 \times 30 = 180$ days.
+    *   The calculation $10,000,000 \times 0.03875 \times (180/360) = 193,750$.
+    *   The explanation incorrectly uses 179 days instead of 180 days. Under the 30/360 convention, the period from August 30 to February 30 (which is how the dates are treated) is exactly 180 days. By using 179, the explanation fails to apply the 30/360 convention correctly for a full 6-month period.
+
+VERDICT: INCORRECT 
+
+===== gemini-3.1-flash-lite | S8_correct | run 4 | said INCORRECT, expected CORRECT
+/ 360$) is mathematically equivalent to calculating interest for 179 days based on a 360-day year. However, the interest period from August 31, 2023, to February 29, 2024, is exactly **half a year** (6 months).
+    *   Using the 30/360 convention, 6 months is defined as $6 \times 30 = 180$ days.
+    *   The calculation $10,000,000 \times 0.03875 \times (180/360) = 193,750$.
+    *   The explanation incorrectly uses 179 days instead of 180 days. Under the 30/360 convention, the period from August 30 to February 30 (which is how the dates are treated) is exactly 180 days. By using 179, the explanation fails to apply the 30/360 convention correctly for a full 6-month period.
+
+VERDICT: INCORRECT 
+
+===== gemini-3.1-flash-lite | S8_correct | run 5 | said INCORRECT, expected CORRECT
+/ 360$) is mathematically equivalent to calculating interest for 179 days based on a 360-day year. However, the interest period from August 31, 2023, to February 29, 2024, is exactly **half a year** (6 months).
+    *   Using the 30/360 convention, 6 months is defined as $6 \times 30 = 180$ days.
+    *   The calculation $10,000,000 \times 0.03875 \times (180/360) = 193,750$.
+    *   The explanation incorrectly uses 179 days instead of 180 days. Under the 30/360 convention, the period from August 30 to February 30 (which is how the dates are treated) is exactly 180 days. By using 179, the explanation fails to apply the 30/360 convention correctly for a full 6-month period.
+
+VERDICT: INCORRECT 
+
+===== gemini-3.5-flash-lite | S1_correct | run 2 | said INCORRECT, expected CORRECT
+ay 29 (30), May 29 to Jun 29 (31), Jun 29 to Jul 29 (30), Jul 29 to Aug 29 (31). Total days in those 6 months = 31+31+30+31+30+31 = 184 days.
+     - From August 29 to August 30 is 1 additional day.
+     - Total actual days = 184 + 1 = 185 days.
+   - The explanation states there are **183 days**, which is incorrect (it missed 2 days). 
+
+3. **Interest Calculation:**
+   - Using the correct number of days (185 days): 
+     $1,000,000 \times 0.05 \times 185 / 360 = \$25,694.44$
+   - The explanation's calculation ($\$25,416.67$) is based on the incorrect day count of 183 days.
+
+Because the day count and final interest amount contain errors, the explanation is not fully correct.
+
+VERDICT: INCORRECT 
+
+===== gemini-3.5-flash-lite | S8_error | run 1 | said CORRECT, expected INCORRECT
+econd date's day must be adjusted to 30. Therefore, $D_2$ becomes 30.
+   - **Calculation:** 
+     $$\text{Days} = 360 \times (2024 - 2023) + 30 \times (2 - 8) + (30 - 30) = 360 - 180 + 0 = 180 \text{ days}.$$
+   - The accrual period correctly evaluates to 180 days.
+
+3. **Interest Amount:**
+   - $\text{Interest} = \text{Principal} \times \text{Rate} \times \left(\frac{\text{Days}}{360}\right)$
+   - $\text{Interest} = 10,000,000 \times 0.03875 \times \frac{180}{360} = 10,000,000 \times 0.03875 \times 0.5 = 193,750.00$.
+   - The interest due is correctly calculated as USD 193,750.00.
+
+The explanation accurately applies the calendar rules, day count conventions, and arithmetic.
+
+VERDICT: CORRECT 
+
+===== gemini-3.5-flash-lite | S8_error | run 3 | said CORRECT, expected INCORRECT
+2 - 8 = -6$ months ($\times 30 = -180$ days)
+     - Days: $30 - 30 = 0$ days
+     - Total Days = $360 - 180 + 0 = 180$ days. (Alternatively, from Aug 31 to Feb 29 is 6 full months $\times 30 = 180$ days). The day count of 180 days is correct.
+
+3. **Interest Amount Calculation:**
+   - Formula: $\text{Principal} \times \text{Rate} \times \frac{\text{Days}}{360}$
+   - Calculation: $10,000,000 \times 0.03875 \times \frac{180}{360} = 10,000,000 \times 0.03875 \times 0.5 = 193,750.00$.
+   - The interest amount of USD 193,750.00 is correct.
+
+All steps in the explanation—including the calendar check, application of the 30/360 day-count convention, and final arithmetic—are accurate.
+
+VERDICT: CORRECT 
+
+===== gemini-3.5-flash-lite | S8_error | run 4 | said CORRECT, expected INCORRECT
+nths: August 31 to February 28/29 is exactly 6 months (September, October, November, December, January, plus the end of August to end of February). $6 \text{ months} \times 30 \text{ days/month} = 180 \text{ days}$. 
+     - The day count of 180 days is correct.
+
+3. **Interest Amount Calculation:**
+   - Formula: $\text{Principal} \times \text{Rate} \times \frac{\text{Days}}{360}$
+   - Calculation: $10,000,000 \times 0.03875 \times \frac{180}{360} = 10,000,000 \times 0.03875 \times 0.5 = 193,750.00$.
+   - The interest amount of USD 193,750.00 is correct.
+
+Every step of the explanation, including the calendar check, day-count application, and financial arithmetic, is accurate.
+
+VERDICT: CORRECT 
+
+===== gemini-3.5-flash-lite | S8_error | run 5 | said CORRECT, expected INCORRECT
+180$ days.
+   - Alternatively, counting by months: September, October, November, December, January, February = 6 full months $\times 30$ days/month = 180 days.
+   - The explanation correctly determines the accrual period to be 180 days.
+
+3. **Interest Amount Calculation:**
+   - Formula: $\text{Principal} \times \text{Rate} \times \frac{\text{Days}}{360}$
+   - Calculation: $\$10,000,000 \times 0.03875 \times \frac{180}{360} = \$10,000,000 \times 0.03875 \times 0.5 = \$193,750.00$.
+   - The explanation correctly computes the interest amount.
+
+Since all steps—business day adjustment, day count application, and final interest math—are accurate, the explanation is fully correct.
+
+VERDICT: CORRECT 
+
+===== gemma-4-31b | S8_error | run 1 | said CORRECT, expected INCORRECT
+ation**:
+        $$\text{Days} = 360 \times (Y_2 - Y_1) + 30 \times (M_2 - M_1) + (D_2 - D_1)$$
+        $$\text{Days} = 360 \times (2024 - 2023) + 30 \times (2 - 8) + (30 - 30)$$
+        $$\text{Days} = 360 \times 1 + 30 \times (-6) + 0 = 360 - 180 = 180 \text{ days.}$$
+
+4.  **Interest Calculation**:
+    $$\text{Interest} = \text{Principal} \times \text{Rate} \times \left(\frac{\text{Days}}{360}\right)$$
+    $$\text{Interest} = 10,000,000 \times 0.03875 \times \left(\frac{180}{360}\right)$$
+    $$\text{Interest} = 10,000,000 \times 0.03875 \times 0.5 = 387,500 \times 0.5 = 193,750.00$$
+
+The payment date and the interest amount calculated in the explanation are both correct.
+
+VERDICT: CORRECT 
+
+===== gemma-4-31b | S8_error | run 2 | said CORRECT, expected INCORRECT
+ation**:
+        $$\text{Days} = 360 \times (Y_2 - Y_1) + 30 \times (M_2 - M_1) + (D_2 - D_1)$$
+        $$\text{Days} = 360 \times (2024 - 2023) + 30 \times (2 - 8) + (30 - 30)$$
+        $$\text{Days} = 360 \times 1 + 30 \times (-6) + 0 = 360 - 180 = 180 \text{ days.}$$
+
+4.  **Interest Calculation**:
+    $$\text{Interest} = \text{Principal} \times \text{Rate} \times \left(\frac{\text{Days}}{360}\right)$$
+    $$\text{Interest} = 10,000,000 \times 0.03875 \times \left(\frac{180}{360}\right)$$
+    $$\text{Interest} = 10,000,000 \times 0.03875 \times 0.5 = 387,500 \times 0.5 = 193,750.00$$
+
+The payment date and the interest amount calculated in the explanation are both correct.
+
+VERDICT: CORRECT 
+
+===== gemma-4-31b | S8_error | run 3 | said CORRECT, expected INCORRECT
+ation**:
+        $$\text{Days} = 360 \times (Y_2 - Y_1) + 30 \times (M_2 - M_1) + (D_2 - D_1)$$
+        $$\text{Days} = 360 \times (2024 - 2023) + 30 \times (2 - 8) + (30 - 30)$$
+        $$\text{Days} = 360 \times 1 + 30 \times (-6) + 0 = 360 - 180 = 180 \text{ days.}$$
+
+4.  **Interest Calculation**:
+    $$\text{Interest} = \text{Principal} \times \text{Rate} \times \left(\frac{\text{Days}}{360}\right)$$
+    $$\text{Interest} = 10,000,000 \times 0.03875 \times \left(\frac{180}{360}\right)$$
+    $$\text{Interest} = 10,000,000 \times 0.03875 \times 0.5 = 387,500 \times 0.5 = 193,750.00$$
+
+The payment date and the interest amount calculated in the explanation are both correct.
+
+VERDICT: CORRECT 
+
+===== gemma-4-31b | S8_error | run 4 | said CORRECT, expected INCORRECT
+ation**:
+        $$\text{Days} = 360 \times (Y_2 - Y_1) + 30 \times (M_2 - M_1) + (D_2 - D_1)$$
+        $$\text{Days} = 360 \times (2024 - 2023) + 30 \times (2 - 8) + (30 - 30)$$
+        $$\text{Days} = 360 \times 1 + 30 \times (-6) + 0 = 360 - 180 = 180 \text{ days.}$$
+
+4.  **Interest Calculation**:
+    $$\text{Interest} = \text{Principal} \times \text{Rate} \times \left(\frac{\text{Days}}{360}\right)$$
+    $$\text{Interest} = 10,000,000 \times 0.03875 \times \left(\frac{180}{360}\right)$$
+    $$\text{Interest} = 10,000,000 \times 0.03875 \times 0.5 = 387,500 \times 0.5 = 193,750.00$$
+
+The payment date and the interest amount calculated in the explanation are both correct.
+
+VERDICT: CORRECT 
+
+===== gemma-4-31b | S8_error | run 5 | said CORRECT, expected INCORRECT
+ation**:
+        $$\text{Days} = 360 \times (Y_2 - Y_1) + 30 \times (M_2 - M_1) + (D_2 - D_1)$$
+        $$\text{Days} = 360 \times (2024 - 2023) + 30 \times (2 - 8) + (30 - 30)$$
+        $$\text{Days} = 360 \times 1 + 30 \times (-6) + 0 = 360 - 180 = 180 \text{ days.}$$
+
+4.  **Interest Calculation**:
+    $$\text{Interest} = \text{Principal} \times \text{Rate} \times \left(\frac{\text{Days}}{360}\right)$$
+    $$\text{Interest} = 10,000,000 \times 0.03875 \times \left(\frac{180}{360}\right)$$
+    $$\text{Interest} = 10,000,000 \times 0.03875 \times 0.5 = 387,500 \times 0.5 = 193,750.00$$
+
+The payment date and the interest amount calculated in the explanation are both correct.
+
+VERDICT: CORRECT 
+
